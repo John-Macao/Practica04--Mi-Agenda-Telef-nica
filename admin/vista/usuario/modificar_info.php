@@ -20,7 +20,7 @@
     ?>
 
     <header>
-        <a href="index.php?id=<?php echo $codigo ?>"><img id="logo_principal" src="../../contenido/logo_ups.png" alt="logo"></a>
+    <a href="index.php?id=<?php echo $codigo ?>"><img id="logo_principal" src="../../images/logoP.png" alt="logo" width="220" height="180"></a>
     </header>
 
     <?php

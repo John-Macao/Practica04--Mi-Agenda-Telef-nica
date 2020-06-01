@@ -9,7 +9,6 @@ header{
 
 h1{
     width: 100%;
-    color: steelblue;
 }
 
 section{
@@ -18,14 +17,8 @@ section{
 
 input{
     width: 40%;
-    height: 400px;
-    background-color: rgb(229, 243, 244);
+    height: 50px;
     font-size: 180%;
     margin: 10px 10px;
-    font-weight: bold;
-}
-
-input:hover{
-    background-color: #FFFCBA;
-    /*background-color: darkcyan;*/
+    background-color: #AEB6BF ;
 }

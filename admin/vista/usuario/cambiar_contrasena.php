@@ -1,64 +1,54 @@
-<!DOCTYPE html> 
-<html> 
-    
-<head> 
-    <meta charset="UTF-8"> 
-    <title>Modificar Contrasenia</title> 
-    <link rel="stylesheet" type="text/css" href="../../css/usuario/diseno_cambiar_contrasena.css"/>
-    <script type="text/javascript" src="../../javascript/validacion_contrasena.js"></script>
-</head> 
+<?php
+    $codigo = $_GET["id"];
+?>
 
-<body> 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Agenda</title>
+    <link rel="stylesheet" type="text/css" href="../../css/usuario/diseno_agenda.css"/>
+    <script type="text/javascript" src="../../javascript/funciones_agenda.js"></script>
+</head>
+
+<body onload="listarTodo(<?php echo $codigo?>)">
     <?php 
         session_start(); 
         
         if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){ 
             header("Location: ../../../public/vista/index.html"); 
         } 
-
-        $codigo = $_GET["id"];
     ?>
 
     <header>
-        <a href="index.php?id=<?php echo $codigo ?>"><img id="logo_principal" src="../../contenido/logo_ups.png" alt="logo"></a>
+    <a href="index.php?id=<?php echo $codigo ?>"><img id="logo_principal" src="../../images/logoP.png" alt="logo" width="220" height="180"></a>
     </header>
 
-    <?php 
-        $sql = "SELECT * FROM usuario where usu_id=$codigo"; 
+    <section id="agregar_telefono">
 
-        include '../../../config/conexionBD.php'; 
-        $result = $conn->query($sql); 
+        <form id="form2" method="POST" onsubmit="return validacion()" action="../../controladores/usuario/agregar_telefono.php">
+            <h2>Agregar Telefonos</h2>
+
+            <input type="hidden" id="id" name="id" value="<?php echo $codigo ?>" /> 
+
+            <label id="label_tel" for="telf">Telefono: </label>
+            <input type="text" id="telf" name="telf" placeholder="Ej. 9999999999" onkeyup="return noLetras(this), verificarDT(this, 'mtelefono',0)"/>
+            <span id="mtelefono" class="error"></span>
+            
+            <select name="oper" id="oper">
+                <option value="claro" selected>Claro</option>
+                <option value="movistar">Movistar</option>
+                <option value="tuenti">Tuenti</option>
+                <option value="cnt">CNT</option>
+            </select>
+
+            <select name="tip" id="tip">
+                <option value="celular" selected>Celular</option>
+                <option value="convencional">Convencional</option>
+            </select>
+
+            <input id="agregar" type="submit" value="Agregar"/>
+            <input id="cancelar" type="button" value="Cancelar" onclick="location.href='index.php?id=<?php echo $codigo?>'">
         
-        if ($result->num_rows > 0) { 
-            while($row = $result->fetch_assoc()) { 
-                ?> 
-                <form method="POST" onsubmit="return validacion()" action="../../controladores/usuario/modificar_contra.php">
-                    <fieldset>
-                        <legend>Cambiar Contraseña</legend>
-
-                        <input type="hidden" id="id" name="id" value="<?php echo $codigo ?>" /> 
-                        
-                        <label>Constraseña Actual</label>
-                        <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña actual..."/>
-
-                        <label>Nueva Contraseña</label>
-                        <input type="password" id="password" name="password" placeholder="Ej. Ingrese la nueva contraseña..." onkeyup="return verificarContrasena(this)"/>
-                        <span id="mcontrasena" class="error"></span>
-
-                        <input id="cambiar_contra" type="submit" value="Cambiar Contrasena"/>
-                        <input id="cancelar" type="button" value="Cancelar" onclick="location.href='index.php?id=<?php echo $codigo ?>'">
-                        <div></div>
-                    </fieldset>
-                </form>
-                <?php 
-            } 
-        } else { 
-            echo "<p>Ha ocurrido un error inesperado !</p>"; 
-            echo "<p>" . mysqli_error($conn) . "</p>"; 
-        } 
-        
-        $conn->close(); 
-    ?>
-</body> 
-
+</body>
 </html>
