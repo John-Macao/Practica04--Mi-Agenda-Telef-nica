@@ -83,7 +83,7 @@ function error(inp, spa, men){
 }
 function arreglo(inp, spa){
     document.getElementById(spa).innerHTML = '';
-    inp.style.border = '2px green solid';
+    inp.style.border = '';
     inp.className = 'none';
 }
 
@@ -217,17 +217,17 @@ function verificarCorreo(id){
                 bandera = true;
                 vgeneral[id]=bandera;
             }else{
-                error(document.getElementById("email"), 'mmail', '<br>El correo no pertenece a la UPS')
+                error(document.getElementById("email"), 'mmail', '<br>Correo Invalido')
                 bandera = false;
                 vgeneral[id]=bandera;
             }
         }else{
-            error(document.getElementById("email"), 'mmail', '<br>El nombre de la cuenta es muy corta')
+            error(document.getElementById("email"), 'mmail', '<br>Correo Invalido')
             bandera = false;
             vgeneral[id]=bandera;
         }
     }else{
-        error(document.getElementById("email"), 'mmail', '<br>El dato ingresado no es un correo electronico')
+        error(document.getElementById("email"), 'mmail', '<br>Correo Invalido')
         bandera = false;
         vgeneral[id]=bandera;
     }

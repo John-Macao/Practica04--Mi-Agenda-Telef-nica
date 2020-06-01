@@ -6,7 +6,7 @@
     <title>Formulario</title>
     <link rel="stylesheet" type="text/css" href="../estilos/fondoGeneral.css">
     <link rel="stylesheet" type="text/css" href="../estilos/estiloFormulario.css"/>
-    <script src="../javascript/validacion_crear_usuario.js"></script>
+    <script src="../JS/validacion_crear_usuario.js"></script>
     
     <meta charset="utf-8" />
 </head>
@@ -20,44 +20,45 @@
         <fieldset>
             <legend>Formulario de Registro</legend>
 
-            <label>Cedula</label>
-            <input type="text" id="dni" name="dni" placeholder="Ej. 9999999999" onkeyup="return noLetras(this), validarCedula(0)" />
+            <label>Cedula (*)</label>
+            <input type="text" id="dni" name="dni" onkeyup="return noLetras(this), validarCedula(0)" />
             <span id="mcedula" class="error"></span>
 
-            <label>Nombres</label>
-            <input type="text" id="name" name="name" placeholder="Ej. Pablo Esteban" onkeyup="return noNumeros(this), validarNA(this, 'mnombre', 1)"/>
+            <label>Nombres (*)</label>
+            <input type="text" id="name" name="name" onkeyup="return noNumeros(this), validarNA(this, 'mnombre', 1)"/>
             <span id="mnombre" class="error"></span>
 
-            <label>Apellidos</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Ej. Loja Morocho" onkeyup="return noNumeros(this), validarNA(this, 'mapellido', 2)"/>
+            <label>Apellidos (*)</label>
+            <input type="text" id="lastname" name="lastname" onkeyup="return noNumeros(this), validarNA(this, 'mapellido', 2)"/>
             <span id="mapellido" class="error"></span>
 
-            <label>Direccion</label>
-            <input type="text" id="address" name="address" placeholder="Ej. Av. calle1" onkeyup="return verificarDT(this, 'mdireccion', 3)"/>
+            <label>Direccion (*)</label>
+            <input type="text" id="address" name="address" onkeyup="return verificarDT(this, 'mdireccion', 3)"/>
             <span id="mdireccion" class="error"></span>
 
-            <label>Telefono</label>
-            <input type="text" id="telf" name="telf" placeholder="Ej. 9999999999" onkeyup="return noLetras(this), verificarDT(this, 'mtelefono',4)"/>
+            <label>Telefono (*)</label>
+            <input type="text" id="telf" name="telf" onkeyup="return noLetras(this), verificarDT(this, 'mtelefono',4)"/>
             <span id="mtelefono" class="error"></span>
 
-            <label>Operadora</label>
-            <input type="text" id="oper" name="oper" placeholder="Ej. Movistar" onkeyup="return validarOperadoraTipo('oper', 'moper', 5)"/>
+            <label>Operadora (*)</label>
+            <input type="text" id="oper" name="oper" onkeyup="return validarOperadoraTipo('oper', 'moper', 5)"/>
             <span id="moper" class="error"></span>
 
-            <label>Tipo telefono</label>
-            <input type="text" id="tipo" name="tipo" placeholder="Celular/Convencional" onkeyup="return validarOperadoraTipo('tipo', 'mtipo', 6)"/>
+            <label>Tipo telefono (*)</label>
+            <input type="text" id="tipo" name="tipo" onkeyup="return validarOperadoraTipo('tipo', 'mtipo', 6)"/>
             <span id="mtipo" class="error"></span>
 
-            <label>Fecha de nacimiento</label>
-            <input type="text" id="nac" name="nac" placeholder="Ej. 1999-01-20" onkeyup="return soloFecha(this), validarFecha(7)"/>
+            <label>Fecha de nacimiento (*)</label>
+            <input type="text" id="nac" name="nac" onkeyup="return soloFecha(this), validarFecha(7)"/>
             <span id="mnac" class="error" ></span>
+            &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> (yyyy-mm-dd)</span>
 
-            <label>E-mail</label>
-            <input type="text" id="email" name="email" placeholder="Ej. usu1@est.ups.edu.ec / usu2@ups.edu.ec" onkeyup="return verificarCorreo(8)"/>
+            <label>Correo Electrónico (*)</label>
+            <input type="text" id="email" name="email" onkeyup="return verificarCorreo(8)"/>
             <span id="mmail" class="error"></span>
 
-            <label>Contraseña</label>
-            <input type="password" id="password" name="password" placeholder="Ej. Ingrese su contraseña aqui" onkeyup="verificarContrasena(9)"/>
+            <label>Contraseña (*)</label>
+            <input type="password" id="password" name="password" onkeyup="verificarContrasena(9)"/>
             <span id="mcontrasena" class="error"></span>
 
             <input id="agregar" type="submit" value="Agregar"/>

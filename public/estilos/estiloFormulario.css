@@ -15,13 +15,12 @@ form label{
     margin-left: 50px;
     margin-top: 20px;
     display: block;
-    font-weight: bold;
 }
 
 input[type=text], input[type=password]{
     margin-left: 50px;
     width: 400px;
-    background-color: rgb(243, 243, 243);
+    
 }
 
 input[type=submit], #cancelar{
@@ -36,7 +35,6 @@ input#agregar{
 .error{
     display: block;
     margin-left: 50px;
-    font-style: italic;
     color: red;
 }
 
