@@ -1,13 +1,11 @@
-body{
-    background-color: rgb(232,241,232);
-}
 
 header{
     text-align: center;
 }
 
 form{
-    background-color: rgb(229, 243, 244);
+    background-color: #CACFD2;
+    border-top: solid black ;
     border-bottom: solid black;
 }
 
@@ -42,7 +40,7 @@ th, td{
 }
 
 th{
-    background-color: darkcyan;
+    background-color: #CACFD2;
 }
 
 #informacion{

@@ -231,7 +231,6 @@ function verificarCorreo(id){
         bandera = false;
         vgeneral[id]=bandera;
     }
-
 }
 
 //VERIFICAR CONTRASENIA
