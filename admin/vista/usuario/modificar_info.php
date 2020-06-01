@@ -5,7 +5,7 @@
     <meta charset="UTF-8"> 
     <title>Modificar Datos</title> 
 
-    <link rel="stylesheet" type="text/css" href="../../css/usuario/diseñoM.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/usuario/disenoM.css"/>
 
 
     <script type="text/javascript" src="../../javascript/validacion_modificar.js"></script>
