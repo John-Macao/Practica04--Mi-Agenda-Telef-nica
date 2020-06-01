@@ -1,14 +1,14 @@
 
-var misFotos=["<img src='imagenes/1.jpg'>",
-"<img src='imagenes/2.jpg'>" ,
-"<img src='imagenes/3.jpg'>" ,
-"<img src='imagenes/4.jpg'>" ,
-"<img src='imagenes/5.jpg'>" ,
-"<img src='imagenes/6.jpg'>" ,
-"<img src='imagenes/7.jpg'>",
-"<img src='imagenes/8.jpg'>",
-"<img src='imagenes/9.jpg'>",
-"<img src='imagenes/10.jpg'>" ];
+var misFotos=["<img src='../images/movimientoImg/1.jpg'>",
+"<img src='../images/movimientoImg/2.jpg'>" ,
+"<img src='../images/movimientoImg/3.jpg'>" ,
+"<img src='../images/movimientoImg/4.jpg'>" ,
+"<img src='../images/movimientoImg/5.jpg'>" ,
+"<img src='../images/movimientoImg/6.jpg'>" ,
+"<img src='../images/movimientoImg/7.jpg'>",
+"<img src='../images/movimientoImg/8.jpg'>",
+"<img src='../images/movimientoImg/9.jpg'>",
+"<img src='../images/movimientoImg/10.jpg'>" ];
 
 var muestra = 0;
 
