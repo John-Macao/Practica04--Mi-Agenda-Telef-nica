@@ -1,13 +1,14 @@
+
 body{
-    background-image: url("../../images/fondoGris.jpg");
-    margin: 0;
+    background-color: red;
 }
+
 header{
     text-align: center;
 }
 
 fieldset{
-    background-color: #AEB6BF ;
+    background-color: rgb(229, 243, 244);
     width: 500px;
     margin: 10% 35%;
 }
@@ -16,11 +17,13 @@ form label{
     margin-left: 50px;
     margin-top: 20px;
     display: block;
+    font-weight: bold;
 }
 
 input[type=text], input[type=password]{
     margin-left: 50px;
     width: 400px;
+    background-color: rgb(243, 243, 243);
 }
 
 input[type=submit], input[type=button]{
@@ -31,6 +34,7 @@ input[type=submit], input[type=button]{
 select{
     margin-left: 50px;
     width: 400px;
+    background-color: rgb(243, 243, 243);
 }
 
 input#modificar{
@@ -40,9 +44,11 @@ input#modificar{
 .error{
     display: block;
     margin-left: 50px;
+    font-style: italic;
     color: red;
 }
 
 div{
     clear: both;
 }
+

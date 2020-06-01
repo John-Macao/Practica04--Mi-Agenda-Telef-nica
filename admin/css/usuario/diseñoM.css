@@ -1,34 +1,31 @@
-/*
 body{
     background-image: url("../../images/fondoGris.jpg");
-    margin: 0;
+    margin-top: 20px;
 }
 
+
 header{
-    padding-bottom: 20px;
     text-align: center;
 }
 
 fieldset{
-    background-color: rgb(229, 243, 244);
+    background-color: #AEB6BF ;
     width: 500px;
-    margin: 20px 35%;
+    margin: 10% 35%;
 }
 
 form label{
     margin-left: 50px;
     margin-top: 20px;
     display: block;
-    font-weight: bold;
 }
 
 input[type=text], input[type=password]{
     margin-left: 50px;
     width: 400px;
-    background-color: rgb(243, 243, 243);
 }
 
-input[type=submit], #cancelar{
+input[type=submit], input[type=button]{
     float: right;
     margin-top: 20px;
 }
@@ -36,10 +33,10 @@ input[type=submit], #cancelar{
 select{
     margin-left: 50px;
     width: 400px;
-    background-color: rgb(243, 243, 243);
+    background-color: #AEB6BF ;
 }
 
-input#agregar{
+input#modificar{
     margin-right: 45px;
 }
 
@@ -53,24 +50,4 @@ input#agregar{
 div{
     clear: both;
 }
-
-table{
-    width: 100%;
-}
-
-th, td{
-    width: 1%;
-    border: solid black;
-    text-align: center;
-}
-
-th{
-    background-color: darkcyan;
-}
-
-.ocultar{
-    visibility: hidden;
-}
-
-*/
 

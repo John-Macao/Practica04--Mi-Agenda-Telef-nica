@@ -4,7 +4,10 @@
 <head> 
     <meta charset="UTF-8"> 
     <title>Modificar Datos</title> 
-    <link rel="stylesheet" type="text/css" href="../../css/usuario/diseno_modificar.css"/>
+
+    <link rel="stylesheet" type="text/css" href="../../css/usuario/diseñoM.css"/>
+
+
     <script type="text/javascript" src="../../javascript/validacion_modificar.js"></script>
 </head> 
 
