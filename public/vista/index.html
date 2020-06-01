@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" type="text/css" href="../estilos/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/galeria.css">
+    <script src="../javascript/galeria.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Agenda Telefonica</h1>
+        <img id="logo_principal" src="../images/logoTelefonica.jpg" alt="logo">
+        <input id="fieldset_busqueda" type="text" placeholder="Buscar" >
+        <div class="iconos">
+            <a href="login.html"><img src="../images/login.png" alt="icon1" width="60px" height="60px"></a>
+            <span>Ingresar</span>
+        </div>
+        <div class="iconos">
+            <a href="crear_usuario.html"><img src="../images/crear.png" alt="icon2" width="60px" height="60px"></a>
+            <span>Crear Usuario</span>
+        </div>
+        <div class="iconos">
+            <a href="listar_telefonos.html"><img src="../images/correo.png" alt="icon3" width="60px" height="60px"></a>
+            <span>Enviar Correo</span>
+        </div>
+    </header>
+
+    <div class="jump"></div>
+    
+    <nav class="navegacion_principal">
+        <ul>
+            <li><a href="">Informacion 1</a></li>
+            <li><a href="">Informacion 2</a></li>
+            <li><a href="">Informacion 3</a></li>
+            <li><a href="">Informacion 4</a></li>
+            <li><a href="">Informacion 5</a></li>
+        </ul>
+    </nav>
+
+    <div class="jump"></div>
+    <div class="jump"></div>
+
+    <section id="informacion">
+        <article id="general">
+            <h3>Informacion de Telefonia</h3>
+            
+            <p>
+                Los directorios telefónicos eran, originalmente, libros o revistas brindados por las 
+                empresas telefónicas, ayuntamientos, etc., en los cuales figuran los números de los 
+                abonados en un área geográfica determinada. Disponen a su vez, de teléfonos de interés 
+                público, como policía, bomberos, hospitales, protección civil, atención al drogodependiente, 
+                etc. Actualmente, se distribuyen también en formato electrónico e Internet.
+                Las guías contienen por orden alfabético, los nombres, la dirección postal y el teléfono de 
+                aquellos abonados a líneas de teléfono que autorizan ser publicados en la guía. En España se 
+                las conocía como Páginas Blancas, aunque actualmente existen diferentes servicios que ofrecen 
+                la misma función.
+            </p>  
+        </article>
+
+        <aside id="img_general">
+          <img src="../images/infoTeleonica.jpg" alt="agenda"/>
+        </aside>
+    </section>
+
+
+    <section class="personajes">
+        <header class="centradoTitulo">
+          <h2>
+            Agendas
+        </h2>
+        </header>
+        <article>
+          <header class="centradoTitulo">
+            <h2>
+              Telefonicas
+          </h2>
+          </header>
+    
+          <div class="creadores">
+            <blockquote class="imgPer1">
+                <img src="../images/agenda1.jfif" alt=""  class="imgPer1">
+                <p>"    Agenda Telefonica 1"</p>
+            </blockquote>
+            <blockquote class="imgPer">
+                <img src="../Images/agenda2.jfif" alt=""  class="imgPer">
+                <p>"    Agenda Telefonica 2"</p>
+            </blockquote>
+            <blockquote class="imgPer">
+                <img src="../Images/agenda3.jpg" alt=""  class="imgPer">
+                <p>"    Agenda Telefonica 3"</p>
+            </blockquote>
+            <blockquote class="imgPer">
+                <img src="../Images/agenda4.jpg" alt="" class="imgPer">
+                <p>"    Agenda Telefonica 4"</p>
+            </blockquote>
+        </div>
+    
+        </article>
+    </section>
+
+    <section id="algo">
+        <img id="algo_img" src="../images/guiaT.jfif" alt="">
+        <article>
+          <h3>Guia de Telefonica</h3>
+          
+          <p>
+              Una guía de teléfonos , también conocido como un directorio telefónico , la libreta 
+              de direcciones del teléfono , agenda telefónica , o las páginas blanco / amarillo ,
+               es una lista de teléfonos de abonados en una zona geográfica o de abonados a los 
+               servicios prestados por la organización que publica el directorio. Su propósito es
+                permitir que el número de teléfono de un abonado identificado por su nombre y dirección 
+                a encontrarse.
+  
+              La llegada de Internet y los teléfonos inteligentes en el siglo 21 reduce enormemente 
+              la necesidad de una guía telefónica de papel. Algunas comunidades, como Seattle y San 
+              Francisco , trataron de prohibir su distribución no solicitada como un desperdicio, 
+              no deseados y nocivos para el medio ambiente.
+  
+          </p>
+        </article>
+      </section>
+
+
+      
+    <div id="visor">
+
+        <div id="fotoEntra">
+        <img src="imagenes/2.jpg" alt="" name="sale" >
+        </div>
+    
+        <div id="fotoSale">
+        <img src="imagenes/1.jpg" alt="" name="sale" >
+        </div>
+    
+    </div>
+    
+    <div id="botones">
+        <button id="botonretro"  onclick="mueve('retro')">Anterior</button>
+        <button id="botoninicia" onclick="inicio('inicia')">Iniciar</button>
+        <button id="botonAvanza" onclick="mueve('avance')">Siguiente</button>
+    
+    
+    </div>
+    
+    
+
+    <div class="jump"></div>
+
+    <footer class="pie_pag">
+        <span>Autor: Jhon Michael Macao Guamán <br>
+          Universidad Politecnica Salesiana<br>
+          Correo: <a href="mailto:jmacao@est.ups.edu.ec">jmacao@est.ups.edu.ec</a><br>
+          Telefono: <a href="tel:+0989449535">0989449535</a><br>
+        </span>
+  
+        <span class="copy">
+          &copy; Todos los derechos reservados.
+        </span>
+      </footer>
+  
+
+</body>
+</html>
+
+
+

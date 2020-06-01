@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(232,241,232);
+}
+
+header{
+    text-align: center;
+}
+
+fieldset{
+    background-color: rgb(229, 243, 244);
+    width: 30%;
+    margin: 10% 35%;
+}
+
+form label{
+    margin-left: 50px;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type=text], input[type=password]{
+    margin-left: 8%;
+    width: 80%;
+    background-color: rgb(243, 243, 243);
+}
+
+input[type=submit], #cancelar{
+    float: right;
+    margin-top: 20px;
+}
+
+input#login{
+    margin-right: 8%;
+}
+
+div{
+    clear: both;
+}

@@ -1,0 +1,53 @@
+body {
+    background-image: url("../images/fondoGris.jpg");
+    margin: 0;
+}
+
+
+.creadores {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    padding: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.creadores li {
+    margin: 5px;
+
+}
+
+.creadores img {
+    border: 4px black solid;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.separador {
+    margin: 7%;
+    clear: both;
+
+}
+
+.pie_pag {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+    border-top: 2px black solid ;
+    border-bottom: 2px black solid ;
+    margin: 0px;
+    background-color: #4A4B4C; 
+    text-align: center;
+}
+
+.copy {
+    float: left;
+    margin-left: 10px;
+}
+
+
