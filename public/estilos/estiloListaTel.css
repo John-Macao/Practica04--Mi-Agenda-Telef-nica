@@ -36,7 +36,7 @@ h2{
 
 th, td{
     text-align: center;
-    border: solid black;
+    border: groove black;
 }
 
 th{
