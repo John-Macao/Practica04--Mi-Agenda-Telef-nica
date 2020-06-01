@@ -32,7 +32,7 @@
             <input type="hidden" id="id" name="id" value="<?php echo $codigo ?>" /> 
 
             <label id="label_tel" for="telf">Telefono: </label>
-            <input type="text" id="telf" name="telf" placeholder="Ej. 9999999999" onkeyup="return noLetras(this), verificarDT(this, 'mtelefono',0)"/>
+            <input type="text" id="telf" name="telf" onkeyup="return noLetras(this), verificarDT(this, 'mtelefono',0)"/>
             <span id="mtelefono" class="error"></span>
             
             <select name="oper" id="oper">

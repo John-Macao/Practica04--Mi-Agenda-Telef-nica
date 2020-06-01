@@ -5,7 +5,7 @@ body{
 
 #form1, #form2{
     width: 100%;
-    background-color: rgb(229, 243, 244);
+    background-color: #AEB6BF ;
     border-bottom: black solid;
     float: left;
 }
@@ -50,11 +50,11 @@ input, select{
 
 th, td{
     text-align: center;
-    border: solid black;
+    border: groove black;
 }
 
 th{
-    background-color: darkcyan;
+    background-color: #AEB6BF ;
 }
 
 .error{
@@ -90,7 +90,6 @@ th{
     margin-top: 10px;
     width: max-content;
     display: block;
-    font-weight: bold;
     float: left;
 }
 

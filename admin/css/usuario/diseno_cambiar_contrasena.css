@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(232,241,232);
+    background-image: url("../../images/fondoGris.jpg");
+    margin: 0;
 }
 
 header{
@@ -7,7 +8,7 @@ header{
 }
 
 fieldset{
-    background-color: rgb(229, 243, 244);
+    background-color: #AEB6BF ;
     width: 30%;
     margin: 10% 35%;
 }
@@ -22,7 +23,7 @@ form label{
 input[type=text], input[type=password]{
     margin-left: 8%;
     width: 80%;
-    background-color: rgb(243, 243, 243);
+    background-color: #AEB6BF ;
 }
 
 input[type=submit], #cancelar{
@@ -37,7 +38,6 @@ input#cambiar_contra{
 .error{
     display: block;
     margin-left: 50px;
-    font-style: italic;
     color: red;
 }
 
