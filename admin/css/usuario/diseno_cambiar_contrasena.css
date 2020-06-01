@@ -9,15 +9,12 @@ header{
 
 fieldset{
     background-color: #AEB6BF ;
-    width: 30%;
-    margin: 10% 35%;
 }
 
 form label{
     margin-left: 50px;
     margin-top: 20px;
     display: block;
-    font-weight: bold;
 }
 
 input[type=text], input[type=password]{

@@ -23,12 +23,12 @@
 
         if($conn -> query($sql) === TRUE){
             echo "<p>Se ha creado el nuevo telefono!!!</p>";
-            header ("Location: ../../vista/usuario/agenda.php?id=$codigo");
+            header ("Location: ../../vista/usuario/index.php?id=$codigo");
         }else{ 
             echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>"; 
         }
     }else{
-        header ("Location: ../../vista/usuario/agenda.php?id=$codigo");
+        header ("Location: ../../vista/usuario/index.php?id=$codigo");
     }
 
     $conn->close();

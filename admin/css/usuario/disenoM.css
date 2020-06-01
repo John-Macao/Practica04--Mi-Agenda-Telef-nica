@@ -11,7 +11,8 @@ header{
 fieldset{
     background-color: #AEB6BF ;
     width: 500px;
-    margin: 10% 35%;
+    margin-top: 40px;
+    margin-left: 500px;
 }
 
 form label{
