@@ -9,7 +9,7 @@ function error(inp, spa, men){
 
 function arreglo(inp, spa){
     document.getElementById(spa).innerHTML = '';
-    inp.style.border = '2px green solid';
+    inp.style.border = '';
     inp.className = 'none';
 }
 

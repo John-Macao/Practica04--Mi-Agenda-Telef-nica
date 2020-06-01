@@ -96,7 +96,6 @@ function listarTodo(codigo){
         }
     };
 
-    console.log("cosas antes de mandar al  controlador");
     xmlhttp.open("GET","../../controladores/usuario/listar_telefonos.php?id="+codigo, true);
     xmlhttp.send();
 
@@ -137,7 +136,7 @@ function error(inp, spa, men){
 
 function arreglo(inp, spa){
     document.getElementById(spa).innerHTML = '';
-    inp.style.border = '2px green solid';
+    inp.style.border = '';
     inp.className = 'none';
 }
 
