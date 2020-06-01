@@ -1,6 +1,6 @@
 body{
-    /*background-color: wheat;*/
-    background-color: rgb(232,241,232);
+    background-image: url("../../images/fondoGris.jpg");
+    background-color: blue;
 }
 
 header{

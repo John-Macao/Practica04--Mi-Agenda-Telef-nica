@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(232,241,232);
+    background-image: url("../../images/fondoGris.jpg");
+    margin: 0;
 }
 
 #form1, #form2{
