@@ -41,8 +41,7 @@
 
                         <input type="hidden" id="id" name="id" value="<?php echo $codigo ?>" /> 
 
-                        <label>Cedula</label>
-                        <input type="text" id="dni" name="dni" value="<?php echo $row["usu_cedula"]; ?>" disabled/>
+                        <input type="hidden" id="dni" name="dni" value="<?php echo $row["usu_cedula"]; ?>" disabled/>
                         <span id="mcedula" class="error"></span>
 
                         <label>Nombres</label>
@@ -61,8 +60,7 @@
                         <input type="text" id="nac" name="nac" value="<?php echo $row["usu_fecha_nacimiento"]; ?>" placeholder="Ej. 1999-01-20" onkeyup="return soloFecha(this), validarFecha(3)"/>
                         <span id="mnac" class="error" ></span>
 
-                        <label>E-mail</label>
-                        <input type="text" id="email" name="email" value="<?php echo $row["usu_correo"]; ?>" disabled/>
+                        <input type="hidden" id="email" name="email" value="<?php echo $row["usu_correo"]; ?>" disabled/>
                         <span id="mmail" class="error"></span>
 
                         <input id="modificar" type="submit" value="Modificar"/>

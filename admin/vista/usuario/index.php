@@ -29,9 +29,9 @@
   <section>
     <h1>Agenda Telefonica</h1>
 
-    <input type="button" id="modificar_usu" name="modificar_usu" width="50px" height="50px" value="Modificar" onclick="location.href='modificar_info.php?id=<?php echo $usu_id?>'"> 
-    <input type="button" id="cambiar_contra" name="cambiar_contra" value="Agregar telefonos" onclick="location.href='cambiar_contrasena.php?id=<?php echo $usu_id?>'">
-    <input type="button" id="agenda" name="agenda" value="Listar Telefonos" onclick="location.href='agenda.php?id=<?php echo $usu_id?>'">
+    <input type="button" id="modificar" name="modificar" width="50px" height="50px" value="Modificar" onclick="location.href='modificar_info.php?id=<?php echo $usu_id?>'"> 
+    <input type="button" id="agregar_telefonos" name="agregar_telefonos" value="Agregar telefonos" onclick="location.href='agregar_telefonos.php?id=<?php echo $usu_id?>'">
+    <input type="button" id="listar_telefonos" name="listar_telefonos" value="Listar Telefonos" onclick="location.href='listar_telefonos.php?id=<?php echo $usu_id?>'">
     <input type="button" id="cerrar_sesion" name="cerrar_sesion" value="Cerrar Sesion" onclick="location.href='../../../config/cerrar_sesion.php'">
     
   </section>
